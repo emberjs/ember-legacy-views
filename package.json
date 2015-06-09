@@ -1,7 +1,7 @@
 {
   "name": "ember-legacy-views",
   "version": "0.1.0",
-  "description": "Use this addon to remove deprecation warnings for Ember.View",
+  "description": "Extended support for Ember.View and friends until Ember 2.4",
   "directories": {
     "doc": "doc",
     "test": "tests"

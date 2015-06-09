@@ -1,25 +1,34 @@
-# Ember-legacy-views
+## ember-legacy-views
 
-This README outlines the details of collaborating on this Ember addon.
+Ember.js 1.13 deprecated the `Ember.View` API and its associated helpers.
+Please see the [deprecation guide](http://emberjs.com/deprecations/v1.x/#toc_ember-view)
+for information about how to migrate away from views in Ember.js.
 
-## Installation
+This addon enables legacy view support without deprecation notices in Ember.js 1.13.
+In Ember.js 2.0 views are not present at all, and this addon brings them back.
+**After Ember 2.4 is released this addon will no longer be compatible with
+Ember**. It should be used to provide extra time for migrating away from views,
+not as a permanent solution.
+
+### App Installation
+
+```
+ember install ember-legacy-views
+```
+
+### Contributing to this Addon
 
 * `git clone` this repository
 * `npm install`
 * `bower install`
 
-## Running
-
-* `ember server`
-* Visit your app at http://localhost:4200.
-
-## Running Tests
+### Running Tests
 
 * `ember test`
 * `ember test --server`
 
-## Building
+### Building and Release
 
-* `ember build`
+* `npm version TYPE` where TYPE is `major`, `minor` or `patch`
 
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).

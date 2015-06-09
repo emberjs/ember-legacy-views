@@ -1,6 +1,6 @@
 {
   "name": "ember-legacy-views",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Extended support for Ember.View and friends until Ember 2.4",
   "directories": {
     "doc": "doc",

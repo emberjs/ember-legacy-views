@@ -15,7 +15,7 @@ module('{{view "some-view"}}', {
   }
 });
 
-test('doest not issue deprecation on invocation', function(assert){
+test('does not issue deprecation on invocation', function(assert){
   assert.expect(1);
 
   let registry = new Ember.Registry();

@@ -15,3 +15,15 @@ test('doest not issue deprecation on create', function(assert){
 
   assert.ok(true, 'No deprecation is thrown');
 });
+
+test('doest not issue deprecation on reopen', function(assert){
+  assert.expect(1);
+
+  try {
+    Ember.View.reopen();
+  } catch(e) {
+    assert.ok(false, `An error was thrown unexpectedly: ${e.message}`);
+  }
+
+  assert.ok(true, 'No deprecation is thrown');
+});

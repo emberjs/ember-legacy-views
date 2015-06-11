@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/emberjs/ember-legacy-views.svg)](https://travis-ci.org/emberjs/ember-legacy-views)
+
 ## ember-legacy-views
 
 Ember.js 1.13 deprecated the `Ember.View` API and its associated helpers.

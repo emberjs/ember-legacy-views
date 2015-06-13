@@ -12,5 +12,6 @@ var EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 */
 
 var app = new EmberAddon();
+app.import(app.bowerDirectory + '/ember/ember-template-compiler.js');
 
 module.exports = app.toTree();

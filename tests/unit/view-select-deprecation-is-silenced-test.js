@@ -5,7 +5,7 @@ import Ember from 'ember';
 
 let component;
 
-module('{{view "some-view"}}', {
+module('{{view "select"}}', {
   teardown() {
     if (component) {
       Ember.run(function() {
@@ -15,13 +15,13 @@ module('{{view "some-view"}}', {
   }
 });
 
-test('does not issue deprecation on invocation', function(assert) {
+test('does not issue deprecation when appended', function(assert){
   assert.expect(1);
 
   let registry = new Ember.Registry();
-  registry.register('view:some-view', Ember.View.extend());
+  registry.register('view:select', Ember.Select);
   registry.register('component:some-component', Ember.Component.extend({
-    layout: hbs`{{view 'some-view'}}`
+    layout: hbs`{{view 'select'}}`
   }));
   let container = registry.container();
   component = container.lookup('component:some-component');
@@ -36,11 +36,11 @@ test('does not issue deprecation on invocation', function(assert) {
   }
 });
 
-test('does not issue deprecation when compiled', function(assert) {
+test('does not issue deprecation when compiled', function(assert){
   assert.expect(1);
 
   try {
-    Ember.HTMLBars.compile('{{view "foo"}}');
+    Ember.HTMLBars.compile('{{view "select"}}');
     assert.ok(true, 'No deprecation is issued.');
   } catch(e) {
     assert.ok(false, `An error was thrown unexpectedly: ${e.message}`);

@@ -12,6 +12,10 @@ In Ember.js 2.0 views are not present at all, and this addon brings them back.
 Ember**. It should be used to provide extra time for migrating away from views,
 not as a permanent solution.
 
+To remove the compile-time deprecation warnings that may appear in the terminal
+output of `ember serve`, make sure your Ember-CLI app is using `ember-cli-htmlbars`
+version `0.7.9` or later (this will be the default for Ember-CLI version 0.28.0 and later).
+
 ### App Installation
 
 ```
